@@ -245,8 +245,8 @@
         "occupation" => "superhero",
         "age" => 30,
         "specialty" => "x-ray vision",
-        "job" => ['reporter', 'scientist']
-        
+
+
       ),
       array(
         "name" => "sally",
@@ -259,11 +259,25 @@
         "occupation" => "arch villain",
         "age" => 63,
         "specialty" => "nanotechnology"
-      ),
-      "movie" => 'avengers'
+      )
     );
-    print_r($characters);
-    // print $characters[0]['job'][1];  
+    // print_r($characters);
+    // // print $characters[0]['job'][1];  
+
+    // foreach ($characters as $character) {
+    //   foreach ($character as $key => $value) {
+    //     print $key . " " . $value . "<br>";
+    //   }
+    // }
+
+    $first = array("a", "b", "c");
+    $second = array(1, 2, 3);
+    $third = array_merge($first, $second);
+    foreach ($third as $val) {
+      print "$val<BR>";
+    }
+
+
 
 
 
