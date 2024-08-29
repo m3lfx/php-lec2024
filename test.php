@@ -226,18 +226,45 @@
     //  "special power" => "flight",
     // );
     // print $character["special power"];
-    $character = array();
-    $character['name'] = "bob";
-    $character['occupation'] = "superhero";
-    $character['age'] = 30;
-    $character["special power"] = "x-ray vision";
-    // print $character['name'];
-    $character['job'] = 'reporter';
-    // print $character['job'];
+    // $character = array();
+    // $character['name'] = "bob";
+    // $character['occupation'] = "superhero";
+    // $character['age'] = 30;
+    // $character["special power"] = "x-ray vision";
+    // // print $character['name'];
+    // $character['job'] = 'reporter';
+    // // print $character['job'];
 
-    foreach($character as $key => $value) {
-      print $key . " ". $value. "<br>";
-    }
+    // foreach($character as $key => $value) {
+    //   print $key . " ". $value. "<br>";
+    // }
+
+    $characters = array(
+      array(
+        "name" => "bob",
+        "occupation" => "superhero",
+        "age" => 30,
+        "specialty" => "x-ray vision",
+        "job" => ['reporter', 'scientist']
+        
+      ),
+      array(
+        "name" => "sally",
+        "occupation" => "superhero",
+        "age" => 24,
+        "specialty" => "superhuman strength"
+      ),
+      array(
+        "name" => "mary",
+        "occupation" => "arch villain",
+        "age" => 63,
+        "specialty" => "nanotechnology"
+      ),
+      "movie" => 'avengers'
+    );
+    print_r($characters);
+    // print $characters[0]['job'][1];  
+
 
 
 
